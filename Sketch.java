@@ -74,17 +74,18 @@ public class Sketch extends PApplet {
     int intX = 0;
     int intY = 0;
 
-    for(int intRow = 0; intRow < 30; intRow++){
-      for(int intColumn = 0; intColumn < 30; intColumn++){
-        intX = 3 + 0;  //Instead of zero, calculate the proper intX location using 'intRow'
-        intY = 300 + 3 + 0; //Instead of zero, calculate the proper intY location using 'intColumn'
-
+    for(int intRow = 0; intRow < 292; intRow+=10){
+      for(int intColumn = 0; intColumn < 300; intColumn+=10){
+        intX = 3 + intRow;  //Instead of zero, calculate the proper intX location using 'intRow'
+        intY =  3 + 300 + intColumn; //Instead of zero, calculate the proper intY location using 'intColumn'
         fill(255);
         noStroke();
         rect(intX, intY, 5, 5);
 
+        }
+
+       
       }
-    }
   }
 
   /**
@@ -114,19 +115,24 @@ public class Sketch extends PApplet {
    * Do NOT use 'if' statements to complete 5-8. Manipulate the loops instead
    */
   public void draw_section5(){
+    fill(110,127,153);
+    triangle(1, 300, 1, 1, 300,  1);
 
   }
 
   public void draw_section6(){
-
+    fill(110,127,153);
+    triangle(600, 300, 600, 1, 300,  1);
   }
 
   public void draw_section7(){
-
+    fill(110,127,153);
+    triangle(600, 300, 900, 1, 900, 300);
   }
   
   public void draw_section8(){
-
+    fill(110,127,153);
+    triangle(1202, 300, 901, 10, 901, 300);
   }
 
 
