@@ -115,8 +115,9 @@ public class Sketch extends PApplet {
    * Do NOT use 'if' statements to complete 5-8. Manipulate the loops instead
    */
   public void draw_section5(){
-    fill(110,127,153);
-    triangle(1, 300, 1, 1, 300,  1);
+   fill(110,127,153);
+  triangle(1, 300, 1, 1, 300,  1);
+    
   }
 
   public void draw_section6(){
@@ -143,6 +144,19 @@ public class Sketch extends PApplet {
   }
   
   public void draw_section8(){
+    int intX = 0;
+   int intY = 0;
+   for(int intRow = 900; intRow < 1200; intRow+=10){
+     for(int intColumn = 0; intColumn < 300; intColumn+=10){
+       intX = 3 + intRow;  //Instead of zero, calculate the proper intX location using 'intRow'
+       intY =  3 + intColumn; //Instead of zero, calculate the proper intY location using 'intColumn'
+      
+       fill(255);
+       noStroke();
+       rect(intX, intY, 5, 5);
+       }
+      }
+
     fill(110,127,153);
     triangle(1202, 300, 901, 1, 901, 300);
   }
