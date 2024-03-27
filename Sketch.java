@@ -117,7 +117,6 @@ public class Sketch extends PApplet {
   public void draw_section5(){
     fill(110,127,153);
     triangle(1, 300, 1, 1, 300,  1);
-
   }
 
   public void draw_section6(){
